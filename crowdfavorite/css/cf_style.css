@@ -1,0 +1,96 @@
+
+.team-member-section h5 {
+    margin-bottom:5px;
+}
+.team-member-section i {
+    line-height: 30px;
+}
+.description_wrap {
+    display:none;
+}
+.description_wrap p {
+    font-size: 20px;
+    line-height: 20px;
+    margin:10px;
+}
+.thumbnail_wrap img {
+    width:100%;
+    height:auto;
+}
+.social_wrap a:first-child img {
+    margin-right:5px;
+}
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+button.read_more_btn {
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 8px 14px;
+}
+.team-member-section a {
+    display:inline-block;
+    text-decoration:none;
+}
+.team-member-section a img {
+    display:block;
+}
+
+/* ----------- Style for the grid ------------- */
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+    max-width: 100%!important; /* Override wp style */
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+    text-align:center;
+    border: 1px solid #ccc;
+}
+.col:first-child, .col:nth-child(4n+4) {
+    margin-left: 0;
+    margin-top: 1%!important; /* Override wp style */
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+/* Apply content width */
+@media only screen and (min-width: 768px) {
+    .main .main-content {
+        max-width: 80%;
+        margin: 0 10%;
+        padding: 0 60px;
+    }
+}
